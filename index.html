@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>inaugration</title>
+	<style type="text/css">
+		.fit {
+  max-width: 19%;
+  max-height: 19%;
+}
+body {
+  background-image: url("src/bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+	</style>
+</head>
+<body>
+<div>
+	<img src="src/1.png" style="align-self: center;padding-left: 30px" class="fit" id="l" onclick="c()" >
+	
+	<script type="text/javascript">
+		var image =  document.getElementById("l");
+
+            function c()
+            {
+                if (image.getAttribute('src') == "src/1.png")
+                {
+                    image.src = "src/1.gif";
+                }
+                else if (image.getAttribute('src') == "src/1.gif")
+                {
+                    image.src = "src/2.gif";
+                }
+                else if (image.getAttribute('src') == "src/2.gif")
+                {
+                    image.src = "src/3.gif";
+                }
+                else if (image.getAttribute('src') == "src/3.gif")
+                {
+                    image.src = "src/4.gif";
+                }
+                else if (image.getAttribute('src') == "src/4.gif")
+                {
+                    image.src = "src/5.gif";
+                }
+
+            }
+	</script>
+</div>
+</body>
+</html>
